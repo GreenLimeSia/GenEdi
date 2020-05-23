@@ -8,31 +8,8 @@ This model is built to be runnable for 1d, 2d and 3d data.
 Networks can be converted from their tensorflow version by running `run_convert_from_tf.py`. The networks have to be of type StyleGAN2, the baseline StyleGAN is not supported (config a-d). The network weights can be automatically downloaded if you specify `--download=NAME` where `NAME` is one of the following:
 
 ```
-car-config-e
-car-config-f
-cat-config-f
-church-config-f
 ffhq-config-e
 ffhq-config-f
-horse-config-f
-car-config-e-Gorig-Dorig
-car-config-e-Gorig-Dresnet
-car-config-e-Gorig-Dskip
-car-config-e-Gresnet-Dorig
-car-config-e-Gresnet-Dresnet
-car-config-e-Gresnet-Dskip
-car-config-e-Gskip-Dorig
-car-config-e-Gskip-Dresnet
-car-config-e-Gskip-Dskip
-ffhq-config-e-Gorig-Dorig
-ffhq-config-e-Gorig-Dresnet
-ffhq-config-e-Gorig-Dskip
-ffhq-config-e-Gresnet-Dorig
-ffhq-config-e-Gresnet-Dresnet
-ffhq-config-e-Gresnet-Dskip
-ffhq-config-e-Gskip-Dorig
-ffhq-config-e-Gskip-Dresnet
-ffhq-config-e-Gskip-Dskip
 ```
 Alternatively, specify a file directly with `--input=FILE`.
 
@@ -94,12 +71,7 @@ In this example we did override one of the options, the `--gpu` option which was
 See `python run_metrics.py --help` for info on metric evaluation (metric evaluation can also be performed during training at specified intervals). This script supports multi-GPU metric evaluations.
 Metrics will be appended to the file `metrics.json` if it exists. Identical metrics will be overwritten by the one that was last evaluated.
 
-### Missing features
-+ Precision-Recall metric
-+ Multi-GPU evaluation of metrics during training
-
 ### Code information
 Base functionality is tested but there might be settings that raise exceptions as the repository contains a couple thousand lines of code. If you find one, please open an issue or pull request.
 
-### License
-~5% of the code has extracts that may have been copied from the official repository. For this code, the [NVIDIA license](https://github.com/NVlabs/stylegan2/blob/master/LICENSE.txt) is applied. For everything else, the MIT license is applied.
+
