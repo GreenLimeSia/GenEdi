@@ -40,7 +40,7 @@ python run_projector.py project_generated_images --network=Gs.pth --seeds=0,1,5
 python run_projector.py project_real_images --network=Gs.pth --data-dir=path/to/image_folder
 ```
 
-### Training and Evaluating
+### Training and Evaluating StyleGAN2
 When specifying a location of your images it should be a root directory where images are located in the root directory or any subdirectories. If conditioning networks with labels, classes are interpreted as the subdirectory of the root directory that the image was loaded from.
 
 Note that a GPU with less than 16 GB memory will not be able to train on images of size 1024x1024.
@@ -62,6 +62,8 @@ In this example we did override one of the options, the `--gpu` option which was
 See `python run_metrics.py --help` for info on metric evaluation (metric evaluation can also be performed during training at specified intervals). This script supports multi-GPU metric evaluations.
 Metrics will be appended to the file `metrics.json` if it exists. Identical metrics will be overwritten by the one that was last evaluated.
 
+### Kaggle Manipulating
+Our method also upload to kaggle, you can copy to your own directory and use it. The kaggle link is available in https://www.kaggle.com/greenlime/genandedi/edit?rvi=1
 ### Code information
 Base functionality is tested but there might be settings that raise exceptions as the repository contains a couple thousand lines of code. If you find one, please open an issue or pull request.
 
