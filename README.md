@@ -1,4 +1,4 @@
-## StyleGAN2_Generating_and_Editing_Facial_Images &mdash; Pytorch Implementation
+## Generating and Editing Facial Images with StyleGAN2 &mdash; Pytorch1.5 Implementation
 ### About StyleGAN2
 This is an unofficial port of the StyleGAN2 architecture and training procedure from [the official Tensorflow implementation](https://github.com/NVlabs/stylegan2) to Pytorch. Pretrained Tensorflow models can be converted into Pytorch models.
 
