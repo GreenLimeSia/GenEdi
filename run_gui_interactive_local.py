@@ -23,13 +23,13 @@ def gen_time_str():
 
 
 """ location to save images """
-path_gan_explore_interactive = 'J:\\Python_Projects\\stylegan2\\stylegan2_pytorch-master\\interactive'
+path_gan_explore_interactive = 'interactive'
 if not os.path.exists(path_gan_explore_interactive):
     os.mkdir(path_gan_explore_interactive)
 
 ##
 """ load feature directions """
-path_feature_direction = 'J:\\Python_Projects\\stylegan2\\stylegan2_pytorch-master\\assert_result\slope\\slope.pkl'
+path_feature_direction = './assert_result/slope/slope.pkl'
 
 with open(path_feature_direction, 'rb') as f:
     feature_direction_name = pickle.load(f)
